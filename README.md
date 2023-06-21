@@ -1,2 +1,6 @@
 # Coursera-Estrutura-Funcionamento-Redes-Computadores
-Documentação de tudo que vi dentro do curso, para revisão.
+Estou criando essa documentação por acreditar que sinto que aprendo mais escrevendo.
+
+## Semana 1
+
+
