@@ -74,8 +74,15 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
 
    Às vezes pode ser útil fazer essas consultas por conta própria para ver exatamente o que acontece por trás das telas. Por isso utilizamos a ferramenta nslookup. Funciona nos sistemas operacionais Windows, Linux e MacOS.
    - Para utilizar apenas digite nslookup e o nome do host que queira fazer a consulta e o registro A será retornado. Por exemplo nslookup www.google.com.br
+     
    <img src=https://github.com/xleofarias/Coursera-Estrutura-Funcionamento-Redes-Computadores/blob/master/Exemplo%20de%20utiliza%C3%A7%C3%A3o%20de%20lookup.png>
    Imagem de exemplo de nslookup</img>
 
 - O lookup também conta com um modelo interativo, para ativa-lo é bem simples apenas digite nslookup e pronto a partir do ">" você pode apenas utilizar parametros e o nome do host que gostaria de consultar. Segue a imagem abaixo.
-   <img src= >Imagem de exemplo do modo interativo</img>
+  
+   <img src=https://github.com/xleofarias/Coursera-Estrutura-Funcionamento-Redes-Computadores/blob/master/Exemplo%20de%20utiliza%C3%A7%C3%A3o%20do%20modo%20interativo.png>
+   
+   Imagem de exemplo do modo interativo</img>
+
+   - Você também pode digitar "set type =" seguido de um tipo de registro de recurso. Por padrão, o nslookup retornará os registros A. Mas com isso, você consegue solicitar explicitamente AAAA ou MX ou até registros de texto associados à máquina. Segue o exemplo da imagem a baixo
+     <img src=>Imagem de exemplo do set type</img>
