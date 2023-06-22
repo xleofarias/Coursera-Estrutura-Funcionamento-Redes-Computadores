@@ -4,6 +4,7 @@ Estou criando essa documentação por acreditar que sinto que aprendo mais escre
 ## Semana 6
 
 1. Introdução à solução de problemas e o futuro das redes:
+
    Existem funções integradas para ajudar a evitar alguns desses problemas de redes. Elas são conhecidas como detecção(Error-detection) e recuperação de erros(Error-Recovery).
    
    **Error-detection** é a capacidade de um protocolo ou programa determinar que algo deu errado.
@@ -12,6 +13,7 @@ Estou criando essa documentação por acreditar que sinto que aprendo mais escre
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 2. Verificação da conectividade:
+
    Caso tenha algum problema de conectividade, como o roteador não esteja conseguindo rotear para um destino ou uma determinada porta esteja inacessível, ou até ser que o TTL de um datagrama IP tenha expirado e até outras situações. O ICMP, protoco de mensagens de controle da internet, é usado para comunicar esses problemas.
    
    O **ICMP** é usado mais por roteadores ou hosts remotos para se comunicar com a origem da transmissão quando ela falha. Ele tem uma composição simples. Ele tem um cabeçalho com alguns campos e uma seção de dados usada pelo host para descobrir quais das transmissões geraram o erro.
