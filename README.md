@@ -54,6 +54,8 @@ Estou criando essa documentação por acreditar que sinto que aprendo mais escre
 
 Caso precise verificar se a camada de transporte está funcional, utilize duas ferramentas incrivelmente poderosas:
 
+**netcat (geralmente abreviado para nc) é um utilitário de rede de computadores para leitura e gravação em conexões de rede usando TCP ou UDP. O comando foi projetado para ser um back-end confiável que pode ser usado diretamente ou facilmente conduzido por outros programas e scripts.**
+
   - Netcat: Para o Linux e Mac OS.
 
   - Test-NetConnection: Para o Windows.
@@ -62,9 +64,14 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
 
   Assim o **nc** tentará estabelecer conexão na porta escolhida daquele host. Se a conexão falhar, o comando será fechado. Se der certo, você verá o cursor piscando, esperando mais dados. Dessa forma você envia dados na **camada de aplicação ao serviço** de escuta do seu teclado.
 
-  Para ter apenas um relatório de status utilize o parâmetro -Z, que significa modo de entrada/ saída zero. O parâmetro -V que significa "detalhado", isso tornará a saída do comando mais útil para os nossos olhos. Diferente caso fosse utilizado para um script.
+  Para ter apenas um relatório de status utilize o parâmetro -z, que significa modo de entrada/ saída zero. O parâmetro -v que significa "detalhado", isso tornará a saída do comando mais útil para os nossos olhos. Diferente caso fosse utilizado para um script.
 
   Agora utilizando o **Test-NetConnection** que é apenas funcional no Windows tem funções semelhantes. Caso você apenas escreva o comando **Test-NetConnection** e o home do host ele funcionará como um **PING** mandando uma mensagem eco de ICMP, mas mostra mais dados, inclusive o protocolo da camada de enlace de dados usado. Ele tem uma vantagem em relação ao Ping. 
 
   Caso queria utilizar o Test-NetConnection com uma porta específica utiliza o parâmetro "**-port**".
+
+  5. Desbravando o DNS
+
+   Às vezes pode ser útil fazer essas consultas por conta própria para ver exatamente o que acontece por trás das telas. Por isso utilizamos a ferramenta nslookup. Funciona nos sistemas operacionais Windows, Linux e MacOS.
+   - Para utilizar apenas digite nslookup e o nome do host que queira fazer a consulta. Por exemplo nslookup www.google.com.br
 
