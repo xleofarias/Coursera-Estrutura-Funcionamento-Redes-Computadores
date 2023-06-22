@@ -58,13 +58,13 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
 
   - Test-NetConnection: Para o Windows.
 
-Para executar o Netcat utilize o comando **nc** com dois **argumentos obrigatórios, o host e a porta que desejar**. 
+  Para executar o Netcat utilize o comando **nc** com dois **argumentos obrigatórios, o host e a porta que desejar**. 
 
-Assim o **nc** tentará estabelecer conexão na porta escolhida daquele host. Se a conexão falhar, o comando será fechado. Se der certo, você verá o cursor piscando, esperando mais dados. Dessa forma você envia dados na **camada de aplicação ao serviço** de escuta do seu teclado.
+  Assim o **nc** tentará estabelecer conexão na porta escolhida daquele host. Se a conexão falhar, o comando será fechado. Se der certo, você verá o cursor piscando, esperando mais dados. Dessa forma você envia dados na **camada de aplicação ao serviço** de escuta do seu teclado.
 
-Para ter apenas um relatório de status utilize o parâmetro -Z, que significa modo de entrada/ saída zero. O parâmetro -V que significa "detalhado", isso tornará a saída do comando mais útil para os nossos olhos. Diferente caso fosse utilizado para um script.
+  Para ter apenas um relatório de status utilize o parâmetro -Z, que significa modo de entrada/ saída zero. O parâmetro -V que significa "detalhado", isso tornará a saída do comando mais útil para os nossos olhos. Diferente caso fosse utilizado para um script.
 
-Agora utilizando o **Test-NetConnection** que é apenas funcional no Windows tem funções semelhantes. Caso você apenas escreva o comando **Test-NetConnection** e o home do host ele funcionará como um **PING** mandando uma mensagem eco de ICMP, mas mostra mais dados, inclusive o protocolo da camada de enlace de dados usado. Ele tem uma vantagem em relação ao Ping. 
+  Agora utilizando o **Test-NetConnection** que é apenas funcional no Windows tem funções semelhantes. Caso você apenas escreva o comando **Test-NetConnection** e o home do host ele funcionará como um **PING** mandando uma mensagem eco de ICMP, mas mostra mais dados, inclusive o protocolo da camada de enlace de dados usado. Ele tem uma vantagem em relação ao Ping. 
 
-Caso queria utilizar o Test-NetConnection com uma porta específica utiliza o parâmetro "**-port**".
+  Caso queria utilizar o Test-NetConnection com uma porta específica utiliza o parâmetro "**-port**".
 
