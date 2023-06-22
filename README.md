@@ -1,4 +1,5 @@
-# Coursera-Estrutura-Funcionamento-Redes-Computadores
+#Coursera-Estrutura-Funcionamento-Redes-Computadores
+
 Estou criando essa documentação por acreditar que sinto que aprendo mais escrevendo.
 
 ## Semana 6
@@ -11,7 +12,7 @@ Estou criando essa documentação por acreditar que sinto que aprendo mais escre
    
    **Error-recovery** é a capacidade de um protocolo ou programa aplicar uma correção.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------
 2. Verificação da conectividade:
 
    Caso tenha algum problema de conectividade, como o roteador não esteja conseguindo rotear para um destino ou uma determinada porta esteja inacessível, ou até ser que o TTL de um datagrama IP tenha expirado e até outras situações. O ICMP, protoco de mensagens de controle da internet, é usado para comunicar esses problemas.
@@ -63,6 +64,7 @@ Assim o **nc** tentará estabelecer conexão na porta escolhida daquele host. Se
 
 Para ter apenas um relatório de status utilize o parâmetro -Z, que significa modo de entrada/ saída zero. O parâmetro -V que significa "detalhado", isso tornará a saída do comando mais útil para os nossos olhos. Diferente caso fosse utilizado para um script.
 
-Agora utilizando o Test-NetConnection que é apenas funcional no Windows tem funções semelhantes. Caso você apenas escreva o comando Test-NetConnection e o home do host ele funcionará como um PING mandando uma mensagem eco de ICMP, mas mostra mais dados, inclusive o protocolo da camada de enlace de dados usado. Ele tem uma vantagem em relação ao Ping. 
+Agora utilizando o **Test-NetConnection** que é apenas funcional no Windows tem funções semelhantes. Caso você apenas escreva o comando **Test-NetConnection** e o home do host ele funcionará como um **PING** mandando uma mensagem eco de ICMP, mas mostra mais dados, inclusive o protocolo da camada de enlace de dados usado. Ele tem uma vantagem em relação ao Ping. 
 
-Caso queria utilizar o Test-NetConnection com uma porta específica utiliza o parâmetro "-port".
+Caso queria utilizar o Test-NetConnection com uma porta específica utiliza o parâmetro "**-port**".
+
