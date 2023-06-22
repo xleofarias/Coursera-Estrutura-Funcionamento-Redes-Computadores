@@ -37,6 +37,11 @@ Estou criando essa documentação por acreditar que sinto que aprendo mais escre
 
 3. Traceroute
 
-   - O Traceroute é uma ferramenta/comando que permite descobrir os caminhos entre dois nós ou melhor dizendo o caminho que nossa mensagem pecorrer até chegar no ip destino. Então ele passa de IP por IP até chegar no destino.
+   - O Traceroute é uma ferramenta/comando que permite descobrir os caminhos entre dois nós ou melhor dizendo o caminho que nossa mensagem pecorrer até chegar no ip destino. Então ele passa de IP por IP até chegar no destino, fazendo saltos. Ele faz isso usando o TTL, a cada TTL é um salto. Para cada salto o traceroute envia três pacotes idênticos.
+   - O traceroute entrega as seguintes informações
+      - primeiro o TTL, número de 1 até o destino caso chegue.
+      - segundo o IP de cada roteador que ele está saltando para chegar no destino.
+      - o tempo que a mensagem demora para se enviada até cada um dos saltos.
+      - E o nome de um host caso o traceroute consiga decifrar um.
 
 
