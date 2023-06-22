@@ -32,3 +32,11 @@ Estou criando essa documentação por acreditar que sinto que aprendo mais escre
    
    O **PING** é usado para enviar um tipo especial de mensagem ICMP chamado "Solicitação de eco" ou "Echo Request". Enviar uma mensagem de eco ICMP é fazer o ping dizer para o destino "Você está ai?" Se o destino estiver em funcionamento e puder se comunicar na rede ele retornará uma mensagem de resposta de eco ICMP.
    Para utilizar esse comando basta digita no bash "ping e em seguida [O ip de destino]".
+
+---------------------------------------------------------------------------------------
+
+3. Traceroute
+
+   - O Traceroute é uma ferramenta/comando que permite descobrir os caminhos entre dois nós ou melhor dizendo o caminho que nossa mensagem pecorrer até chegar no ip destino. Então ele passa de IP por IP até chegar no destino.
+
+
