@@ -84,5 +84,8 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
    
    Imagem de exemplo do modo interativo</img>
 
-   - Você também pode digitar "set type =" seguido de um tipo de registro de recurso. Por padrão, o nslookup retornará os registros A. Mas com isso, você consegue solicitar explicitamente AAAA ou MX ou até registros de texto associados à máquina. Segue o exemplo da imagem a baixo
-     <img src=>Imagem de exemplo do set type</img>
+   - Você também pode digitar "set type =" seguido de um tipo de registro de recurso. Por padrão, o nslookup retornará os registros A. Mas com isso, você consegue solicitar explicitamente AAAA ou MX ou até registros de texto associados à máquina. Segue o exemplo da imagem a baixo.
+
+     <img src=https://github.com/xleofarias/Coursera-Estrutura-Funcionamento-Redes-Computadores/blob/master/Exemplo%20de%20utiliza%C3%A7%C3%A3o.png>
+
+     Imagem de exemplo do set type</img>
