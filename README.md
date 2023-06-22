@@ -74,4 +74,5 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
 
    Às vezes pode ser útil fazer essas consultas por conta própria para ver exatamente o que acontece por trás das telas. Por isso utilizamos a ferramenta nslookup. Funciona nos sistemas operacionais Windows, Linux e MacOS.
    - Para utilizar apenas digite nslookup e o nome do host que queira fazer a consulta. Por exemplo nslookup www.google.com.br
-
+   <img src=>
+   Imagem de exemplo de nslookup</img>
