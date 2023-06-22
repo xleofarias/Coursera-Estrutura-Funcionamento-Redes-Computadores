@@ -89,3 +89,7 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
      <img src=https://github.com/xleofarias/Coursera-Estrutura-Funcionamento-Redes-Computadores/blob/master/Exemplo%20de%20utiliza%C3%A7%C3%A3o.png>
 
      Imagem de exemplo do set type</img>
+
+  - Caso você queira saber tudo bem detelhado pode ta utilizando o comando set debug e depois o nome do host que queira consultar. Segue o exemplo abaixo.
+ 
+    <img src= >Imagem de exemplo de set debug</img>
