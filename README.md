@@ -150,4 +150,43 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
 
    - Endereçamento e sub-redes do IPv6
       
-      - 
+      - IPv6 surgiu em meados dos anos 90, ficava cada vez mais óbvio que faltaria espaço de endereços IPv4 em algum momento. Por isso, um novo protocolo da internet foi desenvolvido, a versão 6 ou IPv6.
+      
+      - Endereços IPv6 têm 128 bits que seria 2 elevado a 128 geraria um número de 39 dígitos. Existe o nome desse intervalo numérico que é o undecilhão.
+      - Os endereços IPv6 geralmente são escrito com 8 grupos de 16 bits cada. Cada um desses grupos é composto de mais quatro números hexadecimais.
+      - Tem um método para comprimir um IPv6. Por exemplo o endereço IPv6 2001:4860:4860:0000:0000:0000:0000:8888 comprimido ficaria dessa forma 2001:4860:4860::8888.
+         - Regra 1: em um endereço IPv6, uma sequência de quatro zeros (0s) em um hexteto pode ser abreviada como um único zero.
+           2001:0404:0001:1000:0000:0000:0EF0:BC00
+           2001:0404:0001:1000:0:0:0EF0:BC00 (abreviado com um zero)
+         - Regra 2: em um endereço IPv6, os zeros à esquerda em cada hexteto podem ser omitidos, os zero à direita não podem ser omitidos.
+           2001:0404:0001:1000:0000:0000:0EF0:BC00
+           2001:404:1:1000:0:0:EF0:BC00 (abreviado com zeros à esquerda omitidos)
+         - Regra 3: em um endereço IPv6, uma única sequência contínua de quatro ou mais zeros pode ser abreviada como dois pontos em dobro (::). A abreviação de dois pontos em dobro pode ser usada    somente uma vez em um endereço IP.
+           2001:0404:0001:1000:0000:0000:0EF0:BC00
+           2001:404:1:1000::EF0:BC00 (abreviado com zeros à esquerda omitidos e zeros contínuos substituídos por dois pontos em dobro.
+      - Todo endereço IPv6 que começa com 2001:0db8 foi reservado para documentação e ensino ou para livros e cursos. São mais de 18 quintilhões de endereços, muito mais do que todo o espaço de endereços IPv4, reservado só para esse fim.
+      - O espaço de endereços IPv6 tem várias outras faixas de endereço reservadas além da faixa para documentação ou para endereços de loopback. Por exemplo, qualquer endereço que comece com FF00:: é usado para multidifusão, que é uma forma de endereçar grupos de hosts de uma só vez.
+      - Endereços que começam com FE80:: são usados para unidifusão de link local. Endereços de unidifusão de link local permitem a comunicação de segmentos da rede local e são configurados com base no endereço MAC da máquina. Uma máquina IPv6 usa o endereço de link local para receber a configuração de rede, algo muito parecido com o que acontece no DHCP.
+      - No IPv6, o endereço de loopback são 31 zeros e um 1 um no final, o que pode ser condensado para apenas ::1.
+      - Os primeiros 64 bits de todo endereço IPv6 é o ID da rede e os segundos 64 bits são o ID de máquina. Isso significa que toda rede IPv6 tem espaço para mais de 9 quintilhões de hosts. Mesmo assim, os engenheiros de rede às vezes dividem a rede por motivos administrativos. A sub-rede IPv6 usa a mesma notação CIDR que você já conhece. Ela é usada para definir uma máscara de sub-rede na parte do ID de rede de um endereço IPv6.
+
+   - Cabeçalhos IPv6
+      
+      -  O primeiro campo de um cabeçalho IPv6 é o campo de versão. Esse é um campo de 4 bits que define a versão do IP que está em uso.
+      -  O próximo campo é chamado de campo da classe de tráfego. Este tem 8 bits e define o tipo de tráfego contido no datagrama IP e permite que cada classe de tráfego receba uma prioridade.
+      -  O próximo campo é o identificador de fluxo. Este é um campo de 20 bits usado junto com a classe de tráfego para roteadores tomarem decisões sobre a qualidade do nível de serviço de um datagrama específico.
+      -  Depois, temos o campo de tamanho da carga. Esse tem 16 bits e define o tamanho da seção da carga de dados do datagrama.
+      -  Depois, temos o campo de próximo cabeçalho. Esse é um conceito exclusivo do IPv6 e pede uma breve explicação. Endereços IPv6 são quatro vezes maiores que endereços IPv4. Isso significa que eles têm mais 1s e 0s, o que quer dizer que demoram mais para transmitir por um link. Para reduzir os problemas com dados adicionais que os endereços IPv6 impõem à rede, o cabeçalho IPv6 foi criado para ser o mais curto possível. Uma maneira de fazer isso era separar todos os campos opcionais do próprio cabeçalho IPv6.
+      -  O campo de próximo cabeçalho define o tipo de cabeçalho vem imediatamente após o atual. Esses cabeçalhos adicionais são opcionais, então não são necessários para um datagrama IPv6 completo. Cada um deles contém um campo de próximo cabeçalho e permitem formar uma cadeia de cabeçalhos se houver muita configuração adicional.
+      -  Em seguida, temos o campo que chamamos de limite de salto. É um campo de 8 bits com a mesma finalidade do campo TTL dos cabeçalhos IPv4.
+      -  Por fim, temos os campos de endereços de origem e destino, cada um com 128 bits. Se o campo próximo cabeçalho especificou outro cabeçalho, ele viria em seguida. Se não, uma carga de dados do mesmo tamanho que o especificado no campo tamanho da carga viria em seguida.
+
+   - Harmonia entre IPv6 e IPv4
+      
+      - É simplesmente impossível a internet toda e todas as redes conectadas mudarem para IPv6 de uma vez só. Muitos dispositivos antigos que podem nem saber se comunicar com IPv6 ainda precisam de conexão. Então, a única forma de o IPv6 ganhar adoção é desenvolvendo uma forma de os tráfegos de IPv6 e IPv4 coexistirem. Com isso, as organizações fariam a transição individualmente, quando puderem. Um exemplo de como isso pode funcionar é com o que chamamos de espaço de endereços IPv4 mapeados. 
+      - As especificações do IPv6 separaram diversos endereços que pode ser diretamente correlacionados a um endereço IPv4. Todo endereço IPv6 que começa com 80 zeros seguidos de 16 uns é entendido como parte do espaço de endereços IPv4 mapeados. Os 32 bits restantes do endereço IPv6 são iguais aos 32 bits do IPv4 que se pretende representar. Isso faz com que o tráfego IPv4 viaje por uma rede IPv6. Mas provavelmente mais importante que isso é o tráfego do IPv6 ter uma forma de viajar pelas redes IPv4. É mais fácil para uma organização mudar para o IPv6 do que as redes do núcleo da internet. Então, apesar de a adoção do IPv6 estar se difundindo, será preciso ter uma forma de viajar pelos remanescentes do IPv4 da espinha dorsal da Internet.
+      - A principal forma de se conseguir isso hoje é através de túneis IPv6. O conceito dos túneis IPv6 é bem simples. São servidores de túnel IPv6 em uma das pontas de uma conexão. Esses servidores de túnel IPv6 encapsulam o tráfego IPv6 de entrada dentro de datagramas IPv4 tradicionais. Depois, os datagramas são entregues no espaço de internet IPv4, onde são recebidos por outro servidor de túnel IPv6. Esse servidor desfaz o encapsulamento passa o tráfego IPv6 mais adiante na rede. Junto com tecnologias de túnel IPv6, o conceito de um intermediário de túnel IPv6 também surgiu. São empresas que fornecem pontos finais de encapsulamento IPv6 para você não precisar introduzir mais equipamentos à sua rede.
+      - Alguns protocolos que realizaram a migração do IPv4 para IPv6:
+         - 6in4:  É um protocolo de encapsulamento que encapsula pacotes IPv6 em links IPv4 especialmente configurados de acordo com as especificações da RFC 4213.
+         - Tunnel Setup Protocol (TSP) é um protocolo de controle de rede experimental usado para negociar parâmetros de configuração de túnel IP entre um host de cliente de túnel e um servidor de agente de túnel, os pontos de extremidade de túnel. [1] Um dos principais usos do TSP é nos mecanismos de transição IPv6.
+         - Anything In Anything (AYIYA) é um protocolo de rede de computadores para gerenciar protocolos de encapsulamento IP em uso entre redes de protocolo Internet separadas. Ele é mais frequentemente usado para fornecer trânsito IPv6 em um link de rede IPv4 quando a conversão de endereços de rede mascara uma rede privada com um único endereço IP que pode mudar com frequência devido ao provisionamento DHCP por provedores de serviços de Internet.    
