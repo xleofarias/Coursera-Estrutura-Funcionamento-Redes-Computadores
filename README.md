@@ -49,6 +49,7 @@ Estou criando essa documentação por acreditar que sinto que aprendo mais escre
    - No Linux e Mac OS o traceroute envia pacotes UDP para portas de número muito alto e no Windows ele usa solicitações de eco ICMP por padrão.
 
    - Existe outras ferramentas semelhantes ao traceroute o "mtr" no Linux/MacOS e "pathping" no Windows. Ambas atuam como traceroutes de longa duração assim o usuario vê melhor como as coisas mudam com o tempo. O "mtr" trabalha em tempo real e atualiza sua saída constantemente com todos os dados agredados atuais sonbre o "traceroute", isso é comparável ao "pathping" que opera por 50 segundos e exibe todos os dados agregados finais de uma vez.
+-------------------------------------------------------------------------------------------------------------------
 
 4. Teste de conectividade de portas
 
@@ -69,6 +70,8 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
   Agora utilizando o **Test-NetConnection** que é apenas funcional no Windows tem funções semelhantes. Caso você apenas escreva o comando **Test-NetConnection** e o home do host ele funcionará como um **PING** mandando uma mensagem eco de ICMP, mas mostra mais dados, inclusive o protocolo da camada de enlace de dados usado. Ele tem uma vantagem em relação ao Ping. 
 
   Caso queria utilizar o Test-NetConnection com uma porta específica utiliza o parâmetro "**-port**".
+
+-------------------------------------------------------------------------------------------------------
 
   5. Desbravando o DNS
 
@@ -96,6 +99,6 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
     
     Imagem de exemplo de set debug</img>
 
-    6. Servidores DNS Públicos
+   - Servidores DNS Públicos
 
-      - É muito importante de um DNS em funcionamente para uma boa rede. Normalmente é apenas necessarios ter um servidor de nome para a comunicação entre dispositivos pela internet.
+      - É muito importante de um DNS em funcionamente para uma boa rede. Normalmente é apenas necessarios ter um servidor de nome para a comunicação entre dispositivos pela internet. O DNS é necessário para decifrar nomes de máquinas internas. Também tem como o DNS como provedor de serviços. Algumas organizações da Internet usam o que chamamos de servidores DNS públicos, que são servidores de nome configurados para que qualquer um possa usar de graça. O uso desses servidores DNS públicos é uma técnica bem bacana para solucionar diversos problemas de resolução de nome com que você possa se deparar. Algumas pessoas usam esses servidores de nome para todas as necessidades de resolução. A maioria dos servidores DNS públicos é disponibilizado por meio de anycast. Sempre veja se o servidor de nomes é gerenciado por uma empresa de renome e procure usar os servidores de nomes oferecidos pelo seu provedor fora do ambiente de resolução de problemas. A maioria dos servidores DNS públicos também responde a solicitações de eco ICMP, por isso são ótimos para testar a conectividade geral com a Internet usando o ping. 
