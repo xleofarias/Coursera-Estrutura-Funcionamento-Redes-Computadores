@@ -117,14 +117,18 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
 
 6. A nuvem
 
-   - No centro da computação em nuvem, temos o que chamamos de virtualização de hardware. Ela é um conceito central do funcionamento da computação em nuvem. Ela cria a possibilidade de se separar a máquina física da máquina lógica. Com a virtualização, uma única máquina física, chamada de host, executa instâncias virtuais, chamadas de convidados. Um sistema operacional espera poder se comunicar com o hardware em questão de formas específicas. Plataformas de virtualização usam o que chamamos de hipervisor. O hipervisor é o software que executa e gerencia máquinas virtuais e ainda oferece a esses convidados uma plataforma operacional virtual idêntica à do hardware físico. Com a virtualização, um único computador físico pode atuar como host de muitas instâncias virtuais independentes. Cada uma delas tem seu próprio sistema operacional independente e, em muitos aspectos, são idênticas aos sistemas operacionais que rodam no hardware físico.
+   - O que é a nuvem?
 
-   - Na nuvem podemos usar serviços que ela mesma fornece como, em vez de se preocupar com montar sua própria solução de backup, é só usar a deles. Simples. E se você precisar de um balanceador de carga, é só usar a solução deles. Além disso, se algum hardware quebrar, a empresa transfere sua instância virtual para outra máquina sem você nem notar.
-
-   - Para completar, como são servidores e serviços virtuais, você não tem que esperar o hardware físico que comprou chegar. Existem tipos de nuvems que irei falar a seguir:
+      - No centro da computação em nuvem, temos o que chamamos de virtualização de hardware. Ela é um conceito central do funcionamento da computação em nuvem. Ela cria a possibilidade de se separar a máquina física da máquina lógica. Com a virtualização, uma única máquina física, chamada de host, executa instâncias virtuais, chamadas de convidados. Um sistema operacional espera poder se comunicar com o hardware em questão de formas específicas. Plataformas de virtualização usam o que chamamos de hipervisor. O hipervisor é o software que executa e gerencia máquinas virtuais e ainda oferece a esses convidados uma plataforma operacional virtual idêntica à do hardware físico. Com a virtualização, um único computador físico pode atuar como host de muitas instâncias virtuais independentes. Cada uma delas tem seu próprio sistema operacional independente e, em muitos aspectos, são idênticas aos sistemas operacionais que rodam no hardware físico.
    
-      - nuvem pública: um grande grupo de máquinas administrado por uma empresa.
+      - Na nuvem podemos usar serviços que ela mesma fornece como, em vez de se preocupar com montar sua própria solução de backup, é só usar a deles. Simples. E se você precisar de um balanceador de carga, é só usar a solução deles. Além disso, se algum hardware quebrar, a empresa transfere sua instância virtual para outra máquina sem você nem notar.Como são servidores e serviços virtuais, você não tem que esperar o hardware físico que comprou chegar.
+   
+      - Existem tipos de nuvems que irei falar a seguir:
       
-      - Nuvem privada segue os mesmos princípios, mas é usada totalmente por uma grande corporação e costumam ficar fisicamente nas instalações próprias da empresa.
-      
-      - Nuvem híbrida, que não é um conceito isolado. É só um termo que descreve casos em que empresas rodam, digamos, suas tecnologias patenteadas mais sigilosas em uma nuvem privada e confiam seus servidores menos sensíveis a uma nuvem pública.
+         - Nnuvem pública: um grande grupo de máquinas administrado por uma empresa.
+         
+         - Nuvem privada segue os mesmos princípios, mas é usada totalmente por uma grande corporação e costumam ficar fisicamente nas instalações próprias da empresa.
+         
+         - Nuvem híbrida, que não é um conceito isolado. É só um termo que descreve casos em que empresas rodam, digamos, suas tecnologias patenteadas mais sigilosas em uma nuvem privada e confiam seus servidores menos sensíveis a uma nuvem pública.
+       
+   - Tudo como serviço
