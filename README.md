@@ -112,3 +112,19 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
      - No inicio os endereços de rede numerados eram correlacionados às palavras por meio de arquivos hosts. Um arquivo host é um arquivo simples que contém um endereço de rede em cada linha, seguido do nome do host que pode ser atribuído a ele. Por exemplo, Uma linha de um arquivo host pode ser: 1.2.3.4 webserver. Isso significa que, no computador em que esse arquivo host está, o usuário pode usar "webserver", em vez de o IP 1.2.3.4. Os arquivos hosts são avaliados pela pilha de rede do próprio sistema operacional. Todos os sistemas operacionais modernos, incluindo os dos celulares e tablets, ainda usam arquivos hosts. Existe um endereço IP especial que é o loopback. Um endereço de loopback é uma forma de enviar tráfego da rede para si mesmo. Enviar tráfego para um endereço de loopback é desviar de toda a infraestrutura de rede, fazendo o tráfego nunca sair do nó.
   
      - O IP de loopback do IPv4 é 127.0.0.1. Ele é configurado em todos os sistemas operacionais modernos com uma entrada em um arquivo host. Quase todos os arquivos hosts existentes terão pelo menos uma linha "127.0.0.1 localhost", provavelmente seguida de ":: 1 localhost", em que "::1" é o endereço de loopback do IPV6. Como o DNS está em todo lugar, os arquivos host não são muito usados mais. Alguns softwares até exigem entradas específicas no arquivo hosts para funcionar corretamente, por mais antiquado que pareça. Por outro lado, os arquivos hosts são uma maneira comum de violação e redirecionamento de tráfego por vírus.
+
+---------------------------------------------------------------------------
+
+6. A nuvem
+
+   - No centro da computação em nuvem, temos o que chamamos de virtualização de hardware. Ela é um conceito central do funcionamento da computação em nuvem. Ela cria a possibilidade de se separar a máquina física da máquina lógica. Com a virtualização, uma única máquina física, chamada de host, executa instâncias virtuais, chamadas de convidados. Um sistema operacional espera poder se comunicar com o hardware em questão de formas específicas. Plataformas de virtualização usam o que chamamos de hipervisor. O hipervisor é o software que executa e gerencia máquinas virtuais e ainda oferece a esses convidados uma plataforma operacional virtual idêntica à do hardware físico. Com a virtualização, um único computador físico pode atuar como host de muitas instâncias virtuais independentes. Cada uma delas tem seu próprio sistema operacional independente e, em muitos aspectos, são idênticas aos sistemas operacionais que rodam no hardware físico.
+
+   - Na nuvem podemos usar serviços que ela mesma fornece como, em vez de se preocupar com montar sua própria solução de backup, é só usar a deles. Simples. E se você precisar de um balanceador de carga, é só usar a solução deles. Além disso, se algum hardware quebrar, a empresa transfere sua instância virtual para outra máquina sem você nem notar.
+
+   - Para completar, como são servidores e serviços virtuais, você não tem que esperar o hardware físico que comprou chegar. Existem tipos de nuvems que irei falar a seguir:
+   
+      - nuvem pública: um grande grupo de máquinas administrado por uma empresa.
+      
+      - Nuvem privada segue os mesmos princípios, mas é usada totalmente por uma grande corporação e costumam ficar fisicamente nas instalações próprias da empresa.
+      
+      - Nuvem híbrida, que não é um conceito isolado. É só um termo que descreve casos em que empresas rodam, digamos, suas tecnologias patenteadas mais sigilosas em uma nuvem privada e confiam seus servidores menos sensíveis a uma nuvem pública.
