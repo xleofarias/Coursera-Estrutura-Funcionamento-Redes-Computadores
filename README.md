@@ -1,4 +1,4 @@
-##Coursera-Estrutura-Funcionamento-Redes-Computadores
+## Coursera-Estrutura-Funcionamento-Redes-Computadores
 
 Estou criando essa documentação por acreditar que sinto que aprendo mais escrevendo.
 
@@ -95,3 +95,7 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
     <img src= https://github.com/xleofarias/Coursera-Estrutura-Funcionamento-Redes-Computadores/blob/master/Exemplo%20de%20utiliza%C3%A7%C3%A3o%20do%20set%20debug.png>
     
     Imagem de exemplo de set debug</img>
+
+    6. Servidores DNS Públicos
+
+      - É muito importante de um DNS em funcionamente para uma boa rede. Normalmente é apenas necessarios ter um servidor de nome para a comunicação entre dispositivos pela internet.
