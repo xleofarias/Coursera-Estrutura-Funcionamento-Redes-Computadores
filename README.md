@@ -15,7 +15,7 @@ Filtrei as partes que acredito que serão importante para revisão.
 ---------------------------------------------------------------------
 2. Verificação da conectividade:
 
-   Caso tenha algum problema de conectividade, como o roteador não esteja conseguindo rotear para um destino ou uma determinada porta esteja inacessível, ou até ser que o TTL de um datagrama IP tenha expirado e até outras situações. O ICMP, protoco de mensagens de controle da internet, é usado para comunicar esses problemas.
+   Caso tenha algum problema de conectividade, como o roteador não esteja conseguindo rotear para um destino ou uma determinada porta esteja inacessível, ou até ser que o TTL de um datagrama IP tenha expirado e até outras situações. O ICMP ou Interactive Control Message Protocol (Protocolo de mensagens de controle interativas), protoco de mensagens de controle da internet, é usado para comunicar esses problemas.
    
    O **ICMP** é usado mais por roteadores ou hosts remotos para se comunicar com a origem da transmissão quando ela falha. Ele tem uma composição simples. Ele tem um cabeçalho com alguns campos e uma seção de dados usada pelo host para descobrir quais das transmissões geraram o erro.
    
@@ -143,3 +143,11 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
    - Armazenamento na nuvem
         
         - Um sistema de armazenamento em nuvem, o cliente contrata um provedor de armazenamento em nuvem para manter seus dados seguros, acessíveis e disponíveis. Esses dados podem ser simples documentos ou até grandes backups de bancos de dados. O armazenamento em nuvem tem muitos benefícios em ao armazenamento tradicional. Sem ele, você precisa ter o trabalho de gerenciar um array de armazenamento. Também permite duplicar seus dados para vários locais diferentes. Muitos desses provedores são de escala global, dando a chance de você disponibilizar seus dados mais rapidamente a usuários de todo o mundo. Eles oferecem também uma proteção contra perda de dados, para o caso de uma região de armazenamento tiver problemas, para você continuar tendo acesso a seus dados em outra região.
+
+-------------------------------------------------------------------
+
+7. IPv6
+
+   - Endereçamento e sub-redes do IPv6
+      
+      - 
