@@ -132,9 +132,14 @@ Caso precise verificar se a camada de transporte está funcional, utilize duas f
          - Nuvem híbrida, que não é um conceito isolado. É só um termo que descreve casos em que empresas rodam, digamos, suas tecnologias patenteadas mais sigilosas em uma nuvem privada e confiam seus servidores menos sensíveis a uma nuvem pública.
        
    - Tudo como serviço
+
      Na nuvem existem 3 tipos de serviços:
         - IaaS ou Instraestrutura como Serviço: A ideia por trás da infraestrutura como serviço é que você não deve ter que pensar em construir sua rede ou seus servidores. Basta pagar alguém para prestar esse serviço a você. A infraestrutura como serviço separa a infraestrutura física de que você precisa.
           
         - PaaS ou Plataforma como Serviço: É um subconjunto da computação em nuvem em que uma plataforma é fornecida para que clientes executem seus serviços. Isso basicamente significa que é fornecido um mecanismo de execução para qualquer software que alguém queira executar. Um desenvolvedor web que está criando um novo aplicativo não precisa de um servidor completo com um sistema de arquivos complexo, recursos dedicados e todas essas coisas. Não faz diferença se o servidor é virtual ou não. Ele só precisa de um ambiente para executar o aplicativo web. É isso que a plataforma como serviço oferece. Plataforma como serviço separa as instâncias do servidor de que você precisa.
           
         - SaaS ou Software como Serviço: O software como serviço é uma forma de licenciar o uso do software para outros, mantendo o software hospedado e gerenciado centralmente. O software como serviço se tornou muito popular por alguns motivos. Um ótimo exemplo é o e-mail.
+
+   - Armazenamento na nuvem
+        
+        - Um sistema de armazenamento em nuvem, o cliente contrata um provedor de armazenamento em nuvem para manter seus dados seguros, acessíveis e disponíveis. Esses dados podem ser simples documentos ou até grandes backups de bancos de dados. O armazenamento em nuvem tem muitos benefícios em ao armazenamento tradicional. Sem ele, você precisa ter o trabalho de gerenciar um array de armazenamento. Também permite duplicar seus dados para vários locais diferentes. Muitos desses provedores são de escala global, dando a chance de você disponibilizar seus dados mais rapidamente a usuários de todo o mundo. Eles oferecem também uma proteção contra perda de dados, para o caso de uma região de armazenamento tiver problemas, para você continuar tendo acesso a seus dados em outra região.
